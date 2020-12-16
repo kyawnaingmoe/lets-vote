@@ -1,0 +1,357 @@
+body{
+    margin: 0 auto;
+}
+.heading{
+    width: '100%';
+    display: flex;
+    flex-direction: row;
+    background-color: #fff !important;
+    align-items: center;
+    padding-right: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    justify-content: space-between;
+    font-family: 'Times New Roman', Times, serif;
+   
+}
+.heading-mobile{
+    width: '100%';
+    background-color: #fff !important;
+    font-size: larger;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+}
+*{
+    list-style: none;
+}
+.sidebar{
+    position: relative;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #1D7B8B;
+    transition: all .5s ease;
+}
+.sidebar header{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    background-color: #0a6a7a;
+}
+.sidebar ul {
+    height: 100%;
+    width: 100%;
+    background-color: #1D7B8B;
+    font-size: 20px;
+    color: white;
+    transition: all .5s ease;
+    letter-spacing: 2px;
+}
+.sidebar ul li{
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+.sidebar a li:hover {
+    padding-left: 60px;
+    color: chartreuse;
+}
+#check{
+    display: none;
+}
+#check:checked ~ .sidebar{
+    display: inline;
+}
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+    background: #042331;
+    border-radius: 3px;
+}
+label #btn{
+    left: 460px;
+    top: 28px;
+    font-size: 25px;
+    color: white;
+    padding: 6px 12px;
+}
+label #cancel{
+    left: -400px;
+    top: 28px;
+    font-size: 25px;
+    color: white;
+    padding: 6px 12px;
+}
+#check:checked ~ label #cancel{
+    left: 460px;
+}
+#check:checked ~ #menu{
+    left: 460px;
+}
+
+.heading-mobile img{
+    height: 100px;
+    width: 100px;
+    padding: 15px 0px 15px 15px
+}
+
+.heading img{
+    height: 130px;
+    width: 130px;
+    padding: 20px;
+}
+
+.heading a:hover{
+    color: black;
+    text-decoration: none;
+}
+.marquee {
+    height: 35px;
+    overflow: hidden;
+    position: relative;
+    background-color: #1D7B8B;
+    letter-spacing: 2.5px;
+    
+}
+.marquee h3:hover {
+	animation-play-state: paused
+}
+.marquee h3 {
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(246, 248, 248);
+        width: 100%;
+        height: 100%;
+        padding: 5px 5px 5px 5px;
+        text-align: center;
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        -moz-animation: scroll-left 2s linear infinite;
+        -webkit-animation: scroll-left 2s linear infinite;
+        animation: scroll-left 30s linear infinite;
+    }
+
+    @-moz-keyframes scroll-left {
+        0% {
+            -moz-transform: translateX(100%);
+        }
+        100% {
+            -moz-transform: translateX(-100%);
+        }
+    }
+    
+    @-webkit-keyframes scroll-left {
+        0% {
+            -webkit-transform: translateX(100%);
+        }
+        100% {
+            -webkit-transform: translateX(-100%);
+        }
+    }
+    
+    @keyframes scroll-left {
+        0% {
+            -moz-transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+        }
+        100% {
+            -moz-transform: translateX(-100%);
+            -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+        }
+    }
+
+.footer{
+    height: 200px;
+    width: '100%';
+    display: flex;
+    flex-direction: row;
+    background-color: #1D7B8B ;
+    color: #fff ;
+    line-height: 30px;
+    padding-top: 20px;
+    padding-left: 90px;   
+}
+@media screen and (max-width: 600px){
+    .footer{
+        height: 100%;
+        position: relative;
+    }
+    .footer div{
+        font-size: 12px;
+        padding-left: 10px;
+    }
+}
+@media screen and (max-width: 400px){
+    .footer{
+        height: 100%;
+        flex-direction: column;
+        line-height: 17px;
+    }
+    .footer div{
+      font-size: 13px;
+      padding: 20px;
+      letter-spacing: 1px;
+    }
+    .sub-footer{
+        font-size: 11px;
+    }
+}
+
+.footer div {
+    text-align: left;
+    cursor: pointer;
+    width: 100%
+}
+
+.sub-footer{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background:  #00474f;
+    color: #fff;
+}
+
+.content{
+    min-height: 400px;
+    background-color: #fff;
+    color: #000;
+  
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+}
+
+.ant-layout-sider, .ant-layout-content{
+    background : #fff !important;
+    color: #000 !important;
+}
+
+.text-uppercase {
+    font-size: 12px;
+    text-transform: uppercase !important;
+    color: black;
+}
+
+.slider{
+    display: flex;
+    flex-direction: row;
+    color: #fff ;
+    line-height: 50px;  
+
+    
+}
+.slider div{
+    width: 20%;
+    text-align: center;
+    
+}
+
+@media screen and (max-width: 700px) {
+    div.heading{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    label #btn{
+        left: 535px;
+        top: 28px;
+        font-size: 20px;
+        color: white;
+        padding: 6px 12px;
+    }
+    label #cancel{
+        left: -500px;
+        top: 28px;
+        font-size: 20px;
+        color: white;
+        padding: 6px 12px;
+    }
+    #check:checked ~ label #cancel{
+        left: 535px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    div.heading-mobile{
+        display: none;
+    }
+}
+
+@media (max-width: 600px){
+    div.footer{
+        padding: 10px;
+    }
+    label #btn{
+        left: 480px;
+        top: 29px;
+        font-size: 20px;
+        color: white;
+        padding: 6px 12px;
+    }
+    label #cancel{
+        left: -500px;
+        top: 29px;
+        font-size: 20px;
+        color: white;
+        padding: 6px 12px;
+    }
+    #check:checked ~ label #cancel{
+        left: 480px;
+    }
+}
+
+@media (max-width: 400px){
+    body{
+        font-size: 1.0em;
+    }
+    .heading-mobile img{
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }
+    label #btn{
+        left: 320px;
+        top: 39px;
+        font-size: 15px;
+        color: white;
+        padding: 6px 12px;
+    }
+    label #cancel{
+        left: -500px;
+        top: 39px;
+        font-size: 15px;
+        color: white;
+        padding: 6px 12px;
+    }
+    #check:checked ~ label #cancel{
+        left: 320px;
+    }
+    .heading-mobile h3{
+        font-size: 15px;
+        line-height: 15px;
+    }
+    .sidebar ul{
+        font-size: 15px;
+    }
+    .sidebar header{
+        font-size: 18px;
+        line-height: 40px;
+    }
+    .sidebar a:hover{
+        padding-left: 20px;
+    }
+    .marquee{
+        font-size: 10px;
+        padding: 2px;
+        letter-spacing: 1px;
+        height: 30;
+    }
+    
+}
+
+
